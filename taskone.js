@@ -6,15 +6,17 @@ After the user has answered all of the questions, print a summary of those answe
 
 
 //prompt questions
-const name = prompt("What is your name");
+const name = prompt("What is your name?");
 const job = prompt(`Hello ${name}! what do you do?`);
-const question = prompt(`Awesome! Do you enjoy being a ${job}`);
+const question = prompt(`Awesome! Do you enjoy being a ${job}?`);
 
-//if else statement
-if(question.toUpperCase === 'Yes'){
-    console.log(`${name} enjoys being a ${job}`);
-} else if(question.toUpperCase === 'No'){
-    console.log(`${name} does not enjoy being a ${job}`)
+const answer = "Yes";
+const answerTwo = "No";
+let message = `${name} enjoys being a ${job}`;
+let messageTwo = `${name} does not enjoy being a ${job}`;
+
+if(question.toUpperCase() === answer.toUpperCase() ) {
+    console.log(`${message}`);
+} else if(question.toUpperCase() === answerTwo.toUpperCase() ) {
+    console.log(`${messageTwo}`);
 }
-
-//document.querySelector('main').innerHTML = ;
